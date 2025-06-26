@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Now</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+	#s{
+	background-image: url("https://i.pinimg.com/236x/8e/50/1c/8e501ce64d74ffdd03bb7ba7133ebb19.jpg");
+	background-size: cover; 
+     background-position: center; 
+     background-repeat: no-repeat;
+	}
+	#r{
+         display: inline;
+		border: 5px black;
+            padding: 5px;
+            margin: 0px;
+            width: 100px;
+			border-radius: 10px;
+            
+            background-color:white;
+            text-decoration: none;}
+
+			h3 a{
+				display: inline;
+				text-decoration: none;
+				padding: 03%;
+			}
+
+			p a{
+				display: inline;
+				text-decoration: none;
+			}
+			.pp{
+				margin-left: 350px;
+			}
+			input{
+				border-radius: 10px;
+			}
+			ul li{
+				text-decoration: none;
+				list-style-type: none;
+
+			}
+			a{
+				text-decoration: none;
+				background-color: white;
+				color: black;
+
+			}
+			
+	</style>
+</head>
+<body id="s">
+	
+	<header>
+		<nav>
+			<ul>
+				<li><a href="AIRLINE.HTML">Home</a></li><br>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	<br><br><br>
+	<main >
+		<h2 style="text-decoration:double;color: white	;text-align: center;"><u>BOOK  YOUR  TICKETS  NOW!!</u></h2><br><br>
+		<form class="pp">
+
+			<label for="from" style="color: white;">From:</label>
+			<input type="text" id="from" name="from"><br><br>
+			<label for="to" style="color: white;">To:</label>
+			<input type="text" id="to" name="to"><br><br>
+			<label for="trip-type" style="color: white;">Trip Type:</label>
+			<input type="checkbox" id="one-way" name="one-way" style="color: white;"> One Way
+			<input type="checkbox" id="return" name="return " style="color: white;"> Return<br><br>
+			<label for="departure-date" style="color: white;">Departure Date:</label>
+			<input type="date" id="departure-date" name="departure-date"><br><br><br>
+			<p style="color: white;">
+			Number of passenger<input type="number" id="Number of passenger" name="Number of passenger" style="color: white;">
+		</p>
+		<h3 style="color: white;">Cabin class</h3>
+		<select>
+			<option value="econmy">Economy</option>
+			<option value="econmy">2 nd sitting</option>
+			<option value="econmy">AC three tier</option>
+
+		</select>	<br><br>		<br>
+
+			<main>
+			<button><input type="submit" onclick="alert('Your Ticket Is Booked Successfully...! ')"></button><br><br>
+
+			<p id="r"><a href="ticket.html">Show tickets</a></p>
+		</main>
+			<label for="return"></label>
+			</form></main></body></html>

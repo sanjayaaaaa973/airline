@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Basic styling for the page */
+body {
+background-color: rgb(227, 193, 193);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+position: relative;
+}
+/* Styling for the navigation bar */
+nav {
+position: absolute;
+top: 10px;
+left: 10px;
+}
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+/* Styling for the navigation buttons */
+nav ul li {
+margin-bottom: 10px;
+}
+.button {
+background-color: rgb(124, 27, 59);
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+text-decoration: none;
+display: inline-block;
+}
+.button:hover {
+background-color: rgb(160, 30, 70);
+}
+/* Styling for the login container */
+#e {
+background-color: rgb(124, 27, 59);
+color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 10px 10px 10px black;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 300px;
+}
+/* Styling for the form labels and inputs */
+label {
+display: block;
+margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+width: 100%;
+padding: 8px;
+margin-bottom: 15px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+/* Styling for the login button */
+button {
+background-color: rgb(124, 27, 59);
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+width: 100%;
+}
+button:hover {
+background-color: rgb(160, 30, 70);
+}
+/* Styling for the p tag and link */
+p {
+border: 5px solid rgb(124, 27, 59);
+padding: 5px;
+margin: 0;
+width: 100px;
+background-color: rgba(241, 231, 231, 0.896);
+text-align: center;
+}
+p a {
+text-decoration: none;
+color: rebeccapurple;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+#e {
+width: 90%;
+margin: auto;
+}
+}
+/* Headings styling */
+h1 {
+text-align: center;
+font-weight: bolder;
+}
+h2 {
+text-decoration: dashed;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="AIRLINE.HTML" class="button">Home</a></li>
+<li><a href="register.html" class="button">Register</a></li>
+</ul>
+</nav>
+</header>
+<div id="e">
+    <main>
+<h2><u>LOGIN</u></h2>
+<form action="process_login.php" method="POST">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username"
+placeholder="Enter your username" aria-label="Enter your username"
+required><br><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password"
+placeholder="Enter your password" aria-label="Enter your password"
+required><br><br>
+<button type="submit"><a href="booking.html" style="color:
+white;text-decoration: none;">Login</a></button>
+</form>
+<br>
+<p><a href="forgot_password.html">Forgot Password?</a></p>
+</main>
+</div>
+<img
+src="https://i.pinimg.com/236x/75/c5/29/75c5298b2194b1ed4d69f19ed49fdc88.jpg"
+alt="" style="margin-left: 50px;">
+</body>
+</html
