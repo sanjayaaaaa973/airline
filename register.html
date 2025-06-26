@@ -1,53 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Register</title>
-<link rel="stylesheet" href="style.css">
-<style>
-#d{
-background-color: rgb(63, 176, 176);
-}
-h1{
-color: white;
-}
-ul li{
-text-decoration: none;
-list-style-type: none;
-}
-a{
-text-decoration: none;
-color: rgb(247, 239, 247);
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body#d {
+      background: linear-gradient(to right, #3fb0b0, #4fc3c3);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #fdd835;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 25px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #fff;
+      color: #3fb0b0;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #f0f0f0;
+      transform: scale(1.02);
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      form {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body id="d">
-<header>
-<nav>
-<ul>
-<li><a href="AIRLINE.HTML">Home</a></li>
-<li><a href="login.html">Login</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<h1>REGISTER!!</h1>
-<form>
-<label for="username">Username:</label>
-<input type="text" id="username" name="username"
-placeholder="Enter your username" aria-label="Enter your username" required
-><br><br>
-<label for="password">Password:</label>
-<input type="password" id="password" name="password"
-placeholder="Enter your password" aria-label="Enter your password"
-required><br><br>
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" placeholder="enter
-your email"><br><br>
-<button><input type="submit" onclick="alert('Your registration Is
-completed Successfully..!GO TO LOGIN PAGE ')"></button><br><br>
-</form>
-</main>
-<h2 style="text-align: center; margin-bottom: 20%;color: white;">HAPPY
-JOURNEY!!!</h2>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="AIRLINE.HTML">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>REGISTER!!</h1>
+    <form onsubmit="showAlert(); return false;">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+  <h2>HAPPY JOURNEY</h2>
+
+  <script>
+    function showAlert() {
+      alert('Your registration is completed Successfully..! GO TO LOGIN PAGE');
+    }
+  </script>
+
 </body>
 </html>
